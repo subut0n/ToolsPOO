@@ -36,8 +36,8 @@ class User:
         else:
             print("No account or incorrect password")
 
-    def new_thread(self):
-        return Thread()
+    def new_thread(self, th: "Thread"):
+        return th
 
     def new_post(self, th, post):
         th.add_post(post)
